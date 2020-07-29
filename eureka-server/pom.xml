@@ -9,28 +9,22 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tea9</groupId>
-	<artifactId>microservice</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservice</name>
+	<name>eureka-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<!--添加编码cloud配置-->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
-		<!--添加编码cloud配置-->
+		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
 	</properties>
 
 	<dependencies>
-		<!--快速开始模版依赖-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
-		<!--快速开始模版依赖-->
-		<!--快速开始test依赖-->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -43,9 +37,7 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-	<!--快速开始test依赖-->
 
-	<!--cloud依赖-->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -57,9 +49,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<!--cloud依赖-->
 
-	<!--快速开始插件-->
 	<build>
 		<plugins>
 			<plugin>
@@ -68,5 +58,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<!--快速开始插件-->
+
 </project>
